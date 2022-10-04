@@ -4,17 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
-        body * {
-            font-family: 'Ropa Sans', sans-serif;
-
-        }
-        </style>
+    <link rel="stylesheet" href="styles.css">
     <title>LOVT</title>
 </head>
 <body>
-    <header style="background-color: darkcyan;">
+    <header>
         <h1>LOVT</h1>
         <h6>
             Your love <br>
@@ -24,59 +18,78 @@
     </header>
 
     <main>
-        <section  style="background-color: rgb(200, 233, 10);" id="banner">
-            <img width="100%" src="img/Rectangle 3.png" alt="">
-        </section>
+        <section id="banner">
+            <img class="styles" width="100%" src="img/Rectangle 3.png" alt="">
+            <div id="left-arrow"><</div>
+            <div id="right-arrow">></div>
+          </section>
+      
 
-        <sectio  style="background-color: rgb(18, 86, 29);" id="sales">
+          <!-- Sales -->
+        <section id="sales">
             <article>
                 <header>
                     <img src="img/Rectangle 6.png" alt="">
                 </header>
                 <footer>
-                    <span>1.200</span>
-                    <span>New</span>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus rerum dicta quae ullam similique suscipit, 
-                       repellendus voluptatum quod ducimus at.</p>
+                    <span>$1.200</span>
+                    <span class="info-right">New</span>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus rerum dicta quae ullam similique suscipit, 
+                       repellendus voluptatum quod ducimus at.
+                    </p>
                 </footer>
             </article>
-            <article>
+            
+          <!-- Sales direita -->
+            <article id="right-sales">
                 <header>
                     <img src="img/Rectangle 7.png" alt="">
                 </header>
                 <footer>
-                    <span>2.000</span>
-                    <span>Sale</span>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus rerum dicta quae ullam similique suscipit, 
-                       repellendus voluptatum quod ducimus at.</p>
+                    <span>$2.000</span>
+                    <span class="info-left">Sale</span>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus rerum dicta quae ullam similique suscipit, 
+                       repellendus voluptatum quod ducimus at.
+                    </p>
                 </footer>
             </article>
         </section>
 
-        <sectio  style="background-color: rgb(210, 17, 129);" id="your-style">
+        <section id="your-style">
                 <h1>Your style</h1>
-                <div><img src="img/Rectangle 11.png" alt=""><span>Industrial</span></div>
-                <div><img src="img/Rectangle 12.png" alt=""><span>Modern</span></div>
-                <div><img src="img/Rectangle 13.png" alt=""><span>Classic</span></div>
+                
+                <div>
+                    <img id="primeira" class="styles" src="img/Rectangle 11.png" alt="">
+                    <span>Industrial</span>
+                </div>
+                <div>
+                    <img class="styles" src="img/Rectangle 12.png" alt="">
+                    <span>Modern</span>
+                </div>
+                <div>
+                    <img class="styles" src="img/Rectangle 13.png" alt="">
+                    <span>Classic</span>
+                </div>
             
         </section>
-    
+
     </main>
 
     <footer  style="background-color: #333333">
-        <img src="img/image 1.png" alt="">
-        <p>
-            LOVT - Yor love, your loft! <br>
-            Broad St, <br>
-            Newark, NJ 07102 - USA <br>
-            +1 (973) 854-555-548 <br>
-            contact 
-        </p>
+         <img src="img/image 1.png" alt="">
+    <p>
+      LOVT - You love, your loft! <br>
+      Broad St, Newark, NJ 07102 - USA <br>
+      +1 (973) 854-555-548 <br>
+      contact@lovtrealstate.com
+    </p>
 
-        <h4>Our social Media</h4>
-        <img src="img/Vector-1.png" alt="">
-        <img src="img/Vector.png" alt="">
-        <img src="img/Vector-2.png" alt="">
-    </footer>
+    <h4>Our Social Media</h4>
+    <img src="img/Vector.png" alt="">
+    <img src="img/Vector-1.png" alt="">
+    <img src="img/Vector-2.png" alt="">
+  </footer>
 </body>
 </html>

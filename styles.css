@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+
+/* Seletor css */
+body {
+    font-family: 'Ropa Sans', sans-serif;
+    padding: 0;
+    margin: 0 auto;
+    color: #777777;
+    width: 768px;
+}
+
+body > header{
+    padding: 8px 44px;
+    font-size: 18px;
+    line-height: 20px;
+    box-shadow: 1px 1px 10px gray;
+}
+
+body > header > img {
+    float: right;
+    margin-top: 16px;
+}
+
+header > *{
+    display: inline-block;
+    margin: 0;
+}
+
+#banner {
+    margin: 10px 44px;
+  }
+  
+  #sales {
+    margin: 10px 44px;
+    width: 640px;
+  }
+  
+  #sales > article {
+    display: inline-block;
+    width: 40%;
+  }
+  
+  #sales > article#right-sale {
+    float: right;
+  }
+  
+  #sales > article > footer {
+    padding: 12px;
+    background-color: #EEEEEE;
+  }
+  
+  #sales span {
+    font-size: 25px;
+    line-height: 27px;
+    text-align: center;
+
+  }
+  
+  .info-right {
+    color: white;
+    width: 70px;
+    border-radius: 10.5px;
+    background-color: #51D275;
+    float: right;
+  }
+
+  .info-left {
+    color: white;
+    width: 70px;
+    border-radius: 10.5px;
+    background-color: rgb(255, 102, 0);
+    float: right;
+  }
+
+/* seletores de classes */
+/* .styles{
+    opacity: 0.5;
+} */
+
+/* seletores de ID */
+/* #primeira{
+    opacity: 1;
+} */
+
+/* seletores por descendencia */
+/* #your-style img{
+    opacity: 0.2;
+} */
+
+/* Seletores de Child */
+/* #your-style > img{
+    opacity: 0.2;
+} */
+/* 
+img.styles{
+    opacity: 1;
+} */
+
+
