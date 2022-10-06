@@ -1,24 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
 
+/* MEDIDAS CSS
+  PIXELS: 1PX
+  VIEWPORT: vw / vh (relativas)
+  fonte geral: rem (relativo) - elemento html
+  fonte de escopo: em (relativo) - elemento pai
+
+
+*/
+
+html {
+  font-size: 80%;
+}
+
+
 /* Seletor css */
 body {
     font-family: 'Ropa Sans', sans-serif;
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
     color: #777777;
-    width: 768px;
+    width: 100%;
+}
+
+body * {
+  box-sizing: border-box;
 }
 
 body > header{
-    padding: 8px 44px;
-    font-size: 18px;
-    line-height: 20px;
-    box-shadow: 1px 1px 10px gray;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    box-shadow: .1px .1rem 1rem gray;
 }
 
 body > header > img {
     float: right;
     margin-top: 16px;
+}
+
+body > main {
+  width: 100%;
 }
 
 header > *{
@@ -27,17 +49,27 @@ header > *{
 }
 
 #banner {
-    margin: 10px 44px;
+    padding: 2rem 1rem;
+    width: 100%;
+  }
+
+#banner > img {
+    width: 100%;
   }
   
   #sales {
-    margin: 10px 44px;
-    width: 640px;
+    width: 100%;
+    padding:  0 1rem;
   }
   
   #sales > article {
-    display: inline-block;
-    width: 40%;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  #sales > article img {
+    width: 100%;
+    margin-bottom: -.5rem;
   }
   
   #sales > article#right-sale {
@@ -59,7 +91,7 @@ header > *{
   .info-right {
     color: white;
     width: 70px;
-    border-radius: 10.5px;
+    border-radius: 1.5rem;
     background-color: #51D275;
     float: right;
   }
@@ -67,10 +99,112 @@ header > *{
   .info-left {
     color: white;
     width: 70px;
-    border-radius: 10.5px;
+    border-radius: 1.5rem;
     background-color: rgb(255, 102, 0);
     float: right;
   }
+
+
+  #your-style {
+    padding: 0 1rem;
+  }
+
+  #your-style * {
+    width: 100%;
+    text-align: center;
+  }
+
+
+  .opaque{
+    opacity: 0.5;
+  }
+
+  .indu{
+    background-image: url(./img/Rectangle\ 11.png);
+    min-height: 5rem;
+    padding-top: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  .moder{
+    background-image: url(./img/Rectangle\ 12.png);
+    min-height: 5rem;
+    padding-top: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  .classi{
+    background-image: url(./img/Rectangle\ 13.png);
+    min-height: 5rem;
+    padding-top: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .styles span{
+    font-size: 1.5rem;
+    text-shadow: black .1rem .1rem;
+  }
+
+
+  footer{
+    width: 100%;
+    padding: 1rem 1rem;
+    background-color: #333333;
+  }
+
+  footer > img#gmaps{
+    width: 100%;
+    padding: 1rem 1rem;
+    background-color: #333333;
+  }
+
+  section#contatos{
+    color: white;
+    text-align: center;
+  }
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+  #sales > article {
+    width: 40%;
+    display: inline-block;
+  }
+  #sales > article:last-child {
+    float: right;
+  }
+  footer > img#gmaps{
+    width: 40%;
+    display: inline-block;
+  }
+  section#contatos{
+    width:40%;
+    text-align: start;
+    display: inline-block;
+    margin-left: 19.6%;
+  }
+}
+
+@media (min-width: 768px) {
+  body{
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  body{
+    max-width: 992px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
 
 /* seletores de classes */
 /* .styles{
@@ -95,5 +229,3 @@ header > *{
 img.styles{
     opacity: 1;
 } */
-
-
